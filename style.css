@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  color: rgb(57, 73, 107);
+  background-color: rgb(255, 240, 245);
+  font-family: Radio Canada Big, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/*==========================MAIN============================*/
+
+.main-container {
+  width: 80%;
+  margin: 1.5em auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #DAE8FF;
+}
+
+/*------------------HEADER--------------------*/
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(149, 198, 255);
+  padding-top: 0.25em;
+}
+
+.logo {
+  margin: 0 0.5em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0.75em 0;
+}
+
+nav li {
+  margin: 0 1em;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+nav li::after {
+  content: '';
+  background-color: rgb(255, 105, 148);
+  width: 0;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+nav li:hover::after {
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(57, 73, 107);
+}
+
+/*-------------------HOME------------------*/
+
+.home-container {
+  position: relative;
+}
+
+.home-container img {
+  width: 100%;
+}
+
+.content-options {
+  position: absolute;
+  height: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  background-color: white;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.active-content-options {
+  height: 23.7%;
+}
+
+.content-li {
+  visibility: hidden;
+  list-style: none;
+  color: rgb(57, 73, 107);
+  padding: 0.2em;
+  cursor: pointer;
+}
+
+.active-content-li {
+  visibility: visible;
+}
+
+.content-options li:hover {
+  background-color: rgb(149, 198, 255);
+  color: white;
+}
+
+.content-options a {
+  text-decoration: none;
+  color: rgb(57, 73, 107);
+}
+
+/* APA PERBEDAAN ALERGI SUSU SAPI DAN LAKTOSA INTOLERAN (APASSDLI) */
+
+#apassdil {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#apassdil h2 {
+  font-weight: 600;
+}
+
+.apassdil-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.apassdil-container-2 span {
+  color: rgb(255, 105, 148);
+  font-weight: 600;
+}
+
+.p1 {
+  width: 100%;
+}
+
+.apassdil-container-2 p {
+  width: 46%;
+  color: white;
+  background-color:rgb(76, 100, 152);
+  padding: 0.7em;
+  border-radius: 10px;
+}
+
+/* APA PENYEBAB ALERGI SUSU SAPI (APASS) */
+
+#apass {
+  width: 90%;
+  margin: 0 auto;
+}
