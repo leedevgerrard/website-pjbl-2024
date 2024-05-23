@@ -5,8 +5,21 @@ body {
   font-family: Radio Canada Big, Arial, Helvetica, sans-serif;
 }
 
+/*=======================TYPOGRAPHY==========================*/
+
+h2 {
+  font-weight: 600;
+}
+
 p {
   font-size: 1.25rem;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 0.8rem;
 }
 
 /*==========================MAIN============================*/
@@ -125,10 +138,6 @@ nav a {
   margin: 0 auto;
 }
 
-#apassdil h2 {
-  font-weight: 600;
-}
-
 .apassdil-container-2 {
   display: flex;
   flex-direction: row;
@@ -159,4 +168,77 @@ nav a {
 #apass {
   width: 90%;
   margin: 0 auto;
+}
+
+.apass-container {
+  margin-bottom: 3rem;
+}
+
+/* APA PENYEBAB INTOLERANSI LAKTOSA (APIL) */
+
+#apil {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#apil p {
+  margin-top: 0;
+}
+
+.apil-container {
+  margin-bottom: 3rem;
+}
+
+/* REAKSI KIMIA (RK) */
+
+#rk {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.rk-container {
+  margin-bottom: 3rem;
+}
+
+/* CARA MENGATASI ALERGI SUSU SAPI DAN INTOLERANSI LAKTOSA (CMASSDIL) */
+
+#cmassdil {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cmassdil-container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cmassdil-flex-1 {
+  width: 64%;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+}
+
+.cmassdil-flex-2 {
+  width: 34%;
+}
+
+.cmassdil-solusi {
+  color: white;
+  background-color: rgb(76, 100, 152);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.cmassdil-solusi-5 {
+  height: 100%;
+}
+
+.cmassdil-p-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.cmassdil-p-subtitle {
+  margin: 0;
 }
