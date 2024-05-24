@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   color: rgb(57, 73, 107);
@@ -49,6 +53,11 @@ span {
 
 .logo {
   margin: 0 0.5em;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: rgb(255, 119, 157);
 }
 
 nav ul {
@@ -107,11 +116,11 @@ nav a {
   padding: 0;
   background-color: white;
   opacity: 0.8;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .active-content-options {
-  height: 23.7%;
+  height: 27.7%;
 }
 
 .content-li {
@@ -169,6 +178,20 @@ nav a {
   border-radius: 10px;
 }
 
+/* TANDA TANDA ALERGI SUSU SAPI DAN INTOLERANSI LAKTOSA (TTASSDIL) */
+
+#ttassdil {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+#ttassdil li {
+  list-style: none;
+  margin-left: 2em;
+  font-size: 1.25rem;
+}
+
 /* APA PENYEBAB ALERGI SUSU SAPI (APASS) */
 
 #apass {
@@ -191,6 +214,50 @@ nav a {
 
 .apil-container {
   margin-bottom: 3rem;
+}
+
+/* ---------------FUNFACT LAKTASE----------------- */
+
+#funfact-laktase {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgb(76, 100, 152);
+  color: white;
+  padding: 0.3em 1em;
+  padding-top: 0.5em;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  transition: 0.3s;
+}
+
+#funfact-laktase:hover {
+  background-color: rgb(255, 119, 157);
+}
+
+.funfact-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.funfact-icon p {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.light-bulb {
+  width: 5em;
+  margin-right: 1em;
+  transition: 0.3s; 
+}
+
+.light-bulb:hover {
+  transform: scale(1.2);
+}
+
+.funfact-content {
+  margin-top: 0;
 }
 
 /* REAKSI KIMIA (RK) */
@@ -256,12 +323,12 @@ nav a {
 
 .solusi-left {
   width: 44.5%;
-  height: 370px;
+  height: 360px;
 }
 
 .solusi-center {
   width: 44.5%;
-  height: 370px;
+  height: 360px;
 }
 
 .cmassdil-p-title {
@@ -438,4 +505,18 @@ nav a {
 .fa-envelope {
   font-size: 1.5rem;
   margin-right: 0.2em;
+}
+
+
+/*=====================MEDIA QUERIES====================*/
+
+@media only screen and (max-width: 800px) {
+  .main-container {
+    width: 90%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
