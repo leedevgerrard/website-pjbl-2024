@@ -136,6 +136,10 @@ nav a {
 
 .home-container {
   position: relative;
+  height: 700px;
+  background-image: url(images/home-img-new.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .home-container img {
@@ -610,8 +614,8 @@ nav a {
 
   /*--------------home---------------*/
 
-  #home-img {
-    background-image: url(images/mobile-home-img.png);
+  .home-container {
+    background-image: url(images/mobile-home-img-new.png);
   }
 
   /*-------------apassdil----------*/
