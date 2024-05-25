@@ -160,7 +160,7 @@ nav a {
 }
 
 .active-content-options {
-  height: 12em;
+  height: 13.6em;
 }
 
 .content-li {
@@ -198,7 +198,6 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1rem;
 }
 
 .apassdil-container-2 span {
@@ -230,6 +229,24 @@ nav a {
   list-style: none;
   margin-left: 2em;
   font-size: 1.25rem;
+}
+
+/* --------------FUNFACT ASMA------------*/
+
+#funfact-asma {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgb(76, 100, 152);
+  color: white;
+  padding: 0.3em 1em;
+  padding-top: 0.5em;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  transition: 0.3s;
+}
+
+#funfact-asma:hover {
+  background-color: rgb(255, 119, 157);
 }
 
 /* APA PENYEBAB ALERGI SUSU SAPI (APASS) */
@@ -396,7 +413,15 @@ nav a {
   width: 46%;
 }
 
-/* -------------SUMBER-------------*/
+/* ---------------------KESIMPULAN------------------- */
+
+#kesimpulan {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* ------------------SUMBER---------------------*/
 
 #sumber {
   width: 90%;
@@ -404,8 +429,20 @@ nav a {
   margin-bottom: 5rem;
 }
 
-#sumber p {
+.journal-p {
   display: inline-block;
+  margin: 0.4em 0;
+}
+
+.normal-p {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.sub-sumber {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.8em;
 }
 
 .material-icons.src-icon {
@@ -551,8 +588,20 @@ nav a {
 /*=====================MEDIA QUERIES====================*/
 
 @media only screen and (max-width: 800px) {
+
+  /*--------typography-------*/
+
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  /*------------main----------------*/
+
   .main-container {
     width: 92%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .header-container {
@@ -573,7 +622,7 @@ nav a {
     right: -350px;
     z-index: 10;
     height: 100vh;
-    width: 40%;
+    width: 50%;
     padding-top: 40px;
     padding-left: 0;
     transition: 0.3s;
@@ -620,55 +669,195 @@ nav a {
 
   /*-------------apassdil----------*/
 
+  #apassdil {
+    width: 85%;
+  }
+
   .apassdil-container-2 {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .apassdil-container-2 p {
-    width: 93%;
+    width: 95%;
+    margin: 0.5em 0;
+  }
+
+  /*-----------ttassdil----------------*/
+
+  #ttassdils {
+    width: 85%;
+  }
+
+  /*-----------funfact asma----------------*/
+
+  #funfact-asma {
+    width: 80%;
+  }
+
+  /*-----------apass----------------*/
+
+  #apass {
+    width: 85%;
+  }
+
+  /*-----------apil----------------*/
+
+  #apil {
+    width: 85%;
+  }
+
+  /*-------------funfact laktase----------------*/
+
+  #funfact-laktase {
+    width: 80%;
+  }
+
+  /*---------------rk---------------*/
+
+  #rk {
+    width: 85%;
   }
 
   /*-----------cmassdil--------------*/
 
+  #cmassdil {
+    width: 85%;
+  }
+
   .cmassdil-container-1 {
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   .cmassdil-flex-1 {
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   .cmassdil-flex-2 {
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   .cmassdil-solusi {
-    height: 80%;
+    height: 60%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   .solusi-left {
     width: 133%;
-    height: 100%;
   }
 
   .solusi-center {
     width: 133%;
-    height: 100%;
   }
 
   .cmassdil-flex-right {
     flex-direction: column;
+    align-items: center;
   }
 
   .cmassdil-flex-3 {
     flex-direction: column;
+    align-items: center;
   }
 
   .solusi-right {
     width: 317%;
   }
 
+  .cmassdil-container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .solusi-left-2 {
+    width: 95%;
+  }
+
+  .solusi-right-2 {
+    width: 95%;
+  }
+
+  /*-----------apass----------------*/
+
+  #kesimpulan {
+    width: 85%;
+  }
+
+  /*-------------sumber---------------*/
+
+  #sumber {
+    width: 85%;
+  }
+
+  .sub-sumber {
+    flex-direction: column;
+  }
+
+  .normal-p {
+    overflow: hidden;
+  }
+
+  /*--------------about us---------------*/
+
+  #about-us {
+    width: 85%;
+  }
+
+  .about-us-container-1 {
+    flex-direction: column;
+  }
+
+  .about-us-container-2 {
+    flex-direction: column;
+    flex-flow: wrap-reverse;
+  }
+
+  .about-us-img {
+    width: 100%;
+  }
+
+  .lee-devin-desc {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .mika-desc {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .lee-devin-desc h2 {
+    font-size: 1.7rem;
+  }
+
+  .mika-desc h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  /*------------contact--------------*/
+
+  #contact {
+    width: 85%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-subcontainer-1 {
+    margin: 0;
+  }
+
+  .contact-subcontainer-2 {
+    margin: 0;
+  }
 }
