@@ -185,6 +185,32 @@ nav a {
   color: rgb(57, 73, 107);
 }
 
+/* SUSU DAN SISTEM KOLOID (SDSK) */
+
+#sdsk {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* --------------------FUNFACT KASUS---------------------- */
+
+#funfact-kasus {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgb(76, 100, 152);
+  color: white;
+  padding: 0.3em 1em;
+  padding-top: 0.5em;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  transition: 0.3s;
+}
+
+#funfact-kasus:hover {
+  background-color: rgb(255, 119, 157);
+}
+
 /* APA PERBEDAAN ALERGI SUSU SAPI DAN LAKTOSA INTOLERAN (APASSDLI) */
 
 #apassdil {
@@ -564,6 +590,11 @@ nav a {
   justify-content: center;
 }
 
+.contact-flex a {
+  text-decoration: none;
+  color:rgb(57, 73, 107);
+}
+
 .contact-flex p {
   margin: 0;
 }
@@ -619,7 +650,7 @@ nav a {
     margin-top: 0;
     position: fixed;
     top: 0;
-    right: -350px;
+    right: -400px;
     z-index: 10;
     height: 100vh;
     width: 50%;
@@ -667,6 +698,18 @@ nav a {
     background-image: url(images/mobile-home-img-new.png);
   }
 
+  /*----------------sdsk--------------*/
+
+  #sdsk {
+    width: 85%;
+  }
+
+  /*-------------funfact kasus----------------*/
+
+  #funfact-kasus {
+    width: 80%;
+  }
+
   /*-------------apassdil----------*/
 
   #apassdil {
@@ -712,12 +755,6 @@ nav a {
 
   #funfact-laktase {
     width: 80%;
-  }
-
-  /*---------------rk---------------*/
-
-  #rk {
-    width: 85%;
   }
 
   /*-----------cmassdil--------------*/
