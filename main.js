@@ -25,5 +25,5 @@ menuBar.addEventListener('click', () => {
 })
 
 xmark.addEventListener('click', () => {
-  sideMenu.style.right = "-350px";
+  sideMenu.style.right = "-500px";
 })
