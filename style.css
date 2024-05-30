@@ -847,6 +847,10 @@ nav a {
     overflow: hidden;
   }
 
+  .journal-p {
+    overflow: hidden;
+  }
+
   /*--------------about us---------------*/
 
   #about-us {
